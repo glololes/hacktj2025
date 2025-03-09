@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+
+    <!-- Swipe Container -->
+    <FrameLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@color/dark_green" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find Your Fit!"
+        android:textSize="30dp"
+        android:textColor="@color/light_yellow"
+        android:gravity="center"
+        android:fontFamily="@font/flatory_serif_semibold_semicondensed"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swipe right to add to your collection, swipe left to skip"
+        android:textSize="15dp"
+        android:textColor="@color/light_yellow"
+        android:gravity="center"
+        android:layout_marginTop="460dp"
+        android:fontFamily="@font/flatory_serif_semibold_semicondensed"
+        />
+    <!-- Button Container for Like/Dislike -->
+    <LinearLayout
+        android:layout_below="@+id/swipeContainer"
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Dislike Button -->
+        <ImageButton
+            android:id="@+id/dislikeButton"
+            android:background="@color/light_yellow"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/ic_dislike" />
+
+        <!-- Like Button -->
+        <ImageButton
+            android:id="@+id/likeButton"
+            android:background="@color/light_yellow"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/ic_like"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/profileDetailsContainer"
+        android:layout_below="@id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/light_yellow"
+        android:elevation="4dp">
+
+        <!-- Profile Name -->
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green" />
+
+        <!-- Profile Price -->
+        <TextView
+            android:id="@+id/profilePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price: $10.99"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="8dp" />
+
+        <!-- Sustainability Level -->
+        <TextView
+            android:id="@+id/sustainabilityLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sustainability: High"
+            android:textSize="16sp"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="-22dp"
+            android:layout_marginLeft="150dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

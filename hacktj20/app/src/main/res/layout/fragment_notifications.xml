@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!-- Header Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="#588157"
+        android:gravity="center"></RelativeLayout>
+
+        <TextView
+            android:letterSpacing="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-110dp"
+            android:fontFamily="@font/flatory_serif_semibold_semicondensed"
+            android:text="Your Profile"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+        <!-- Profile Picture -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/march7queen"
+            android:background="@android:color/white"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="-0dp"
+            android:elevation="4dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/ImageView.Circle"
+            android:clipToOutline="true"/>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_gravity="center"
+            android:text="Guest"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_green"
+            android:layout_marginTop="0dp"/>
+
+        <!-- Edit Icon -->
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@id/profile_image"
+            android:layout_alignBottom="@id/profile_image"
+            android:src="@drawable/pencil_icon"
+            android:background="@android:color/white"
+            android:padding="4dp"
+            android:elevation="2dp"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="230dp"/>
+
+
+    <!-- com.example.hacktj25.User Info Section -->
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5DC"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="40dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/flatory_serif_semibold_semicondensed"
+            android:text="User Info"
+            android:letterSpacing="0.05"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:rowCount="2">
+
+            <TextView
+                android:text="Gender"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="4dp"/>
+            <TextView
+                android:text="Age"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="4dp"/>
+            <TextView
+                android:text="Email"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:text="Female"
+                android:layout_width="120dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:text="18"
+                android:layout_width="120dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="4dp"/>
+            <EditText
+                android:text="e@gmail.com"
+                android:layout_width="120dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="4dp"/>
+
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Saved Preferences Section -->
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5DC"
+        android:padding="10dp"
+        android:layout_marginTop="12dp"
+        android:elevation="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/flatory_serif_semibold_semicondensed"
+            android:text="Saved Preferences"
+            android:letterSpacing="0.05"
+            android:textColor="@color/dark_green"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="5"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Color"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:layout_width="120dp"
+                android:layout_margin="10dp"
+                android:text="Green"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="Style"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:text="Chic"
+                android:layout_width="120dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:text="Price Range"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:text="$40-$60"
+                android:layout_width="120dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:text="Preferred Materials"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:text="Linen"
+                android:layout_width="120dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:text="Allergies"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+            <EditText
+                android:text="None"
+                android:layout_width="120dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="10dp"/>
+        </GridLayout>
+    </LinearLayout>
+
+    <!-- Sign Out Button -->
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Sign Out"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textColor="#B22222"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/deleteicon"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>
