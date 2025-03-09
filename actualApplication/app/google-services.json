@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "105625992244",
+    "project_id": "superduperlens",
+    "storage_bucket": "superduperlens.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105625992244:android:179129876fed15f0311e61",
+        "android_client_info": {
+          "package_name": "com.cruzkim.actualapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHP1T9gpAoihpuAfauEcCLLT5bPn-NBck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
